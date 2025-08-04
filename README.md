@@ -1,79 +1,22 @@
-# Welcome to React Router!
+# Qur'an Web App
 
-A modern, production-ready template for building full-stack React applications using React Router.
+![Status Proyek](https://img.shields.io/badge/Status-Beta-green?style=flat-square)
+![Badge Lisensi](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-## Features
+## 📖 Description
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+This project was developed with the purpose of learning React.Js. Why choose the Qur'an as its focus? Because the developer (currently just myself), under the name Lucid Dreamworks Devs, has a vision to create something beneficial for humanity, especially for those who share the same faith as the current developer (Islam).
 
-## Getting Started
+## 🚀 The technology used
 
-### Installation
+- React + React Router v7 Framework Mode
+- TypeScript
+- Tailwind CSS
+- Qur'an Ayah font: LPMQ Isep Misbah
+- API from [https://equran.id/apidev/v2](https://equran.id/apidev/v2)
 
-Install the dependencies:
+## ✨ Lucid Dreamworks Devs
 
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Previewing the Production Build
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-Deployment is done using the Wrangler CLI.
-
-To build and deploy directly to production:
-
-```sh
-npm run deploy
-```
-
-To deploy a preview URL:
-
-```sh
-npx wrangler versions upload
-```
-
-You can then promote a version to production after verification or roll it out progressively.
-
-```sh
-npx wrangler versions deploy
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- **Noval S (Nosora)**
+  - Email: [novalsofyan.business@gmail.com](mailto:novalsofyan.business@gmail.com)
+  - LinkedIn: [Noval S](https://www.linkedin.com/in/novalsofyan/)
