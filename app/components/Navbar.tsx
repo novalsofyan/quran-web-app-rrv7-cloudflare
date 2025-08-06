@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 
@@ -71,7 +73,7 @@ export default function NavbarComponents() {
                   toggleMenu();
                 }
               }}
-              to={"/quran-apps?page=1"}
+              to={"/app?page=1"}
             >
               App
             </Link>

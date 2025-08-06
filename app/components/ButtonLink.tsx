@@ -15,7 +15,7 @@ export default function ButtonLink({ input, url, isSelfCentered, isBlank }: IInp
       target={isBlank ? "_blank" : "_self"}
       rel="noopener noreferrer"
     >
-      <button className="button m-0 select-none">{input}</button>
+      <button className="button select-none">{input}</button>
     </Link>
   );
 }

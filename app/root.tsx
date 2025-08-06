@@ -4,6 +4,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import NavbarComponents from "./components/Navbar";
 import FooterComponents from "./components/Footer";
+import ButtonLink from "./components/ButtonLink";
 
 export const links: Route.LinksFunction = () => [
   {
@@ -53,14 +54,15 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
+    <main className="pt-16 grow flex flex-col p-4 container mx-auto justify-center">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center">{message}</h1>
+      <p className="text-base text-gray-700 mb-4 text-center">{details}</p>
       {stack && (
         <pre className="w-full p-4 overflow-x-auto">
           <code>{stack}</code>
         </pre>
       )}
+      <ButtonLink input="Back to Home" url="/" isSelfCentered />
     </main>
   );
 }

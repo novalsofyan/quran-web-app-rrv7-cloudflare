@@ -46,9 +46,40 @@ body {
 }
 
 .button {
-  @apply text-base bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 mt-4 rounded-full cursor-pointer transition-colors duration-300;
+  @apply text-base bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded-full cursor-pointer transition-colors duration-300;
 }
 
 .link-text {
   @apply text-green-500 hover:text-green-700 transition-colors duration-300;
+}
+
+/* Font Component */
+
+.font-size-navbar {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.font-size-text-lg {
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+}
+
+.font-size-text-hero {
+  font-size: clamp(0.95rem, 2vw, 1.5rem);
+}
+
+.font-size-text-md {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.font-size-text-sm {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+}
+
+.font-credit-img {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  @apply text-center text-gray-500 mt-2;
+}
+
+.font-size-footer {
+  font-size: clamp(0.7rem, 1vw, 1rem);
 }
