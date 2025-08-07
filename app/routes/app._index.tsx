@@ -7,14 +7,6 @@ import fetchData from "~/utils/fetchData";
 import type { Surat, dataType } from "~/types/dataType";
 import { sanitizeHTML } from "~/utils/sanitizeHTML";
 
-// Loader data type untuk disambungin,disalurin terserah dah apa namanya ke komponen
-type LoaderData = {
-  suratUntukHalamanIni: Surat[];
-  TOTAL_HALAMAN: number;
-  TOTAL_SURAT: number;
-  halamanAktif: number;
-};
-
 // Meta data halaman
 export const meta: MetaFunction = () => {
   return [
@@ -24,7 +16,7 @@ export const meta: MetaFunction = () => {
 };
 
 // Loader (server-side)
-export async function loader({ request }: LoaderFunctionArgs): Promise<LoaderData> {
+export async function loader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
   const searchParams = url.searchParams;
 
@@ -57,7 +49,7 @@ export async function loader({ request }: LoaderFunctionArgs): Promise<LoaderDat
 
 // Komponen utama halaman
 export default function App() {
-  const { suratUntukHalamanIni, TOTAL_HALAMAN, TOTAL_SURAT, halamanAktif } = useLoaderData() as LoaderData;
+  const { suratUntukHalamanIni, TOTAL_HALAMAN, TOTAL_SURAT, halamanAktif } = useLoaderData<typeof loader>();
 
   return (
     <div className="container font-size-text-md flex flex-col items-center pt-16 mt-4 mb-4 grow self-center">
@@ -80,7 +72,7 @@ export default function App() {
             dangerouslySetInnerHTML={{ __html: sanitizeHTML(surat.deskripsi) }}
           />
 
-          <ButtonLink input="📖 Baca Surat" url={`app/${surat.nomor}`} isSelfCentered />
+          <ButtonLink input="📖 Baca Surat" url={`${surat.nomor}`} isSelfCentered />
         </div>
       ))}
 
